@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Regression Suite]">
+  <test thread-count="5" name="Regression Test(failed)">
+    <groups>
+      <run>
+        <include name="regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.bank.testsuite.BankTest">
+        <methods>
+          <include name="customerShouldWithdrawMoneySuccessfully"/>
+          <include name="customerShouldDepositMoneySuccessfully"/>
+          <include name="customerShouldLoginAndLogoutSuccessfully"/>
+          <include name="setUp"/>
+          <include name="teadDoen"/>
+          <include name="inIt"/>
+        </methods>
+      </class> <!-- com.bank.testsuite.BankTest -->
+    </classes>
+  </test> <!-- Regression Test(failed) -->
+</suite> <!-- Failed suite [Regression Suite] -->
